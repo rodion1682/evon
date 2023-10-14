@@ -1,0 +1,126 @@
+@import "./consts.scss";
+
+.admin {
+	margin-top: 20px;
+	padding-bottom: 50px;
+	// .admin__container
+	&__container {
+	}
+	// .admin__line
+	&__line {
+	}
+	// .admin__items
+	&__items {
+		flex: 1 1 auto;
+		display: flex;
+		gap: 30px;
+		&:not(:last-child) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	// .admin__item
+	&__item {
+		flex: 1 1 auto;
+		font-family: "Poppins";
+		&_1 {
+			order: 1;
+		}
+		&_2 {
+			order: 2;
+		}
+		&_3 {
+			order: 3;
+		}
+		&_4 {
+			order: 4;
+		}
+	}
+	// .admin__title
+	&__title {
+		text-transform: capitalize;
+		font-size: 30px;
+		line-height: 40px;
+		font-weight: 700;
+		&:not(:last-child) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+	// .admin__content
+	&__content {
+		font-size: 17px;
+		color: $dark;
+		&_id {
+			font-size: 30px;
+			font-weight: 700;
+		}
+		&_image {
+			display: flex;
+			gap: 20px;
+		}
+		&_password {
+			display: flex;
+		}
+	}
+	// .admin__select-wrapper
+	&__select-wrapper {
+		max-width: 150px;
+	}
+	// .admin__input
+	&__input {
+		border: 1px solid $dark;
+		&_name {
+			max-width: 150px;
+		}
+		&_price {
+			max-width: 80px;
+		}
+	}
+	// .admin__image-ibg
+	&__image-ibg {
+		width: 75px;
+		height: 75px;
+		border: 1px solid $dark;
+		cursor: pointer;
+		transition: border 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				border: 1px solid $red;
+			}
+		}
+	}
+	// .admin__image-input
+	&__image-input {
+		display: none;
+	}
+	// .admin__actions
+	&__actions {
+		align-self: center;
+		order: 5;
+	}
+	// .admin__button
+	&__button {
+		&:not(:last-child) {
+			margin: 0px 0px 5px 0px;
+		}
+	}
+	// .admin__button_delete
+	&__button_delete {
+		background-color: $darkRed !important;
+		border: 1px solid $darkRed;
+		&:hover {
+			background-color: transparent !important;
+			color: $darkRed;
+		}
+	}
+	// .admin__button_add
+	&__button_add {
+		background-color: $blue !important;
+		border: 1px solid $blue;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: transparent !important;
+				color: $blue;
+			}
+		}
+	}
+}

@@ -1,0 +1,242 @@
+@import "./consts.scss";
+
+.cart {
+	padding: 30px 0;
+	font-family: "Poppins";
+	// .cart__body
+	&__body {
+		&:not(:last-child) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	// .cart__item
+	&__item {
+		padding: 0px 15px;
+		display: flex;
+		gap: 30px;
+		border: 1px solid $darkBlue;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+		@media (max-width: $md2) {
+			gap: 20px;
+			flex-wrap: wrap;
+			padding: 0px 15px 15px 15px;
+		}
+		@media (max-width: $md4) {
+			border: none;
+			margin: 0 -15px;
+		}
+	}
+	// .cart__content
+	&__content {
+		display: flex;
+		flex: 0 0 300px;
+		margin-right: auto;
+		@media (max-width: $md4) {
+			flex: 0 0 230px;
+		}
+	}
+	// .cart__inner
+	&__inner {
+		width: 100%;
+		display: flex;
+		gap: 20px;
+		margin-right: auto;
+	}
+	// .cart__image-ibg_contain
+	&__image-ibg_contain {
+		flex: 0 0 80px;
+		height: 80px;
+	}
+	// .cart__title
+	&__title {
+		align-self: center;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 24px;
+		flex: 1 1 auto;
+	}
+	// .cart__numbers
+	&__numbers {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		flex: 0 0 425px;
+		@media (max-width: $md2) {
+			flex: 1 1 100%;
+			order: 3;
+			justify-content: center;
+		}
+		@media (max-width: $md5) {
+			gap: 20px;
+			flex-wrap: wrap;
+		}
+	}
+	// .cart__price
+	&__price {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 21px;
+		color: $red;
+		min-width: 80px;
+		max-width: 80px;
+		&::before {
+			content: "$";
+			margin-right: 3px;
+		}
+		@media (max-width: $md5) {
+			order: 2;
+		}
+	}
+	// .cart__quantity
+	&__quantity {
+		flex: 0 0 160px;
+		display: flex;
+		height: 40px;
+		border: 1px solid $darkBlue;
+		@media (max-width: $md5) {
+			flex: 1 1 100%;
+			order: 1;
+		}
+	}
+	// .cart__btn
+	&__btn {
+		flex: 0 0 40px;
+		height: 40px;
+		width: 40px;
+		cursor: pointer;
+		position: relative;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transition: all 0.3s ease 0s;
+			background-color: $darkBlue;
+			margin: 0 0 0 -5px;
+		}
+		&_minus {
+			border-right: 1px solid $darkBlue;
+			&::before {
+				width: 10px;
+				height: 2px;
+			}
+			&::after {
+				display: none;
+			}
+		}
+		&_plus {
+			border-left: 1px solid $darkBlue;
+			&::before {
+				transform: rotate(-90deg);
+				width: 10px;
+				height: 2px;
+			}
+			&::after {
+				width: 10px;
+				height: 2px;
+			}
+		}
+	}
+	// .cart__input
+	&__input {
+		height: 40px;
+		flex: 1 1 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		input {
+			background-color: transparent;
+			width: 100%;
+			color: $darkBlue;
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+	// .cart__subtotal
+	&__subtotal {
+		font-size: 18px;
+		line-height: 21px;
+		font-weight: 700;
+		color: $darkBlue;
+		min-width: 80px;
+		max-width: 80px;
+		&::before {
+			content: "$";
+			margin-right: 3px;
+		}
+		@media (max-width: $md5) {
+			order: 3;
+		}
+	}
+	// .cart__deleat
+	&__deleat {
+		align-self: center;
+		position: relative;
+		height: 40px;
+		width: 40px;
+		transition: background-color 0.3s ease 0s;
+		background-color: $darkBlue;
+		svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			path {
+				fill: #fff;
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $red;
+			}
+		}
+	}
+	// .cart__bottom
+	&__bottom {
+		@media (min-width: $md4) {
+			display: flex;
+			justify-content: flex-end;
+			gap: 30px;
+		}
+		@media (max-width: $md4) {
+			margin: 0 -15px;
+		}
+	}
+	// .cart__total
+	&__total {
+		display: flex;
+		gap: 15px;
+		align-items: center;
+		border: 1px solid $darkBlue;
+		height: 40px;
+		color: $darkBlue;
+		padding: 0px 15px;
+		@media (max-width: $md4) {
+			width: fit-content;
+			margin: 0px 15px 15px auto;
+		}
+	}
+	// .cart__total-text
+	&__total-text {
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+	// .cart__total-price
+	&__total-price {
+		font-weight: 700;
+		min-width: 80px;
+		max-width: 80px;
+		overflow: hidden;
+		&::before {
+			content: "$";
+			margin-right: 3px;
+		}
+	}
+	// .cart__button
+	&__button {
+		flex: 0 0 200px;
+	}
+}

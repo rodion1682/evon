@@ -1,0 +1,162 @@
+[
+	{
+		"name": "Bucket Bag",
+		"brand": "Nike",
+		"capacity": "40",
+		"weight": "5",
+		"image": "01.jpg",
+		"price": 25
+	},
+	{
+		"name": "Saddle Bag",
+		"brand": "Puma",
+		"capacity": "45",
+		"weight": "4",
+		"image": "02.jpg",
+		"price": 199.99
+	},
+	{
+		"name": "Attaché Case",
+		"brand": "Nike",
+		"capacity": "45",
+		"weight": "5",
+		"image": "03.jpg",
+		"price": 45.5
+	},
+	{
+		"name": "Duffel Bag",
+		"brand": "Adidas",
+		"capacity": "45",
+		"weight": "6",
+		"image": "04.jpg",
+		"price": 78.99
+	},
+	{
+		"name": "Crossbody Bag",
+		"brand": "Nike",
+		"capacity": "50",
+		"weight": "6",
+		"image": "05.jpg",
+		"price": 240
+	},
+	{
+		"name": "Wristlet",
+		"brand": "Puma",
+		"capacity": "40",
+		"weight": "4",
+		"image": "06.jpg",
+		"price": 78.99
+	},
+	{
+		"name": "Barrel Bag",
+		"brand": "Adidas",
+		"capacity": "50",
+		"weight": "4",
+		"image": "07.jpg",
+		"price": 99.99
+	},
+	{
+		"name": "Hobo Bag",
+		"brand": "Puma",
+		"capacity": "45",
+		"weight": "4",
+		"image": "08.jpg",
+		"price": 110
+	},
+	{
+		"name": "Shoulder Bag",
+		"brand": "Nike",
+		"capacity": "40",
+		"weight": "6",
+		"image": "09.jpg",
+		"price": 25.99
+	},
+	{
+		"name": "Weekender Bag",
+		"brand": "Nike",
+		"capacity": "40",
+		"weight": "5",
+		"image": "10.jpg",
+		"price": 135.25
+	},
+	{
+		"name": "Fanny Pack",
+		"brand": "Adidas",
+		"capacity": "50",
+		"weight": "6",
+		"image": "11.jpg",
+		"price": 220.25
+	},
+	{
+		"name": "Fanny Pack",
+		"brand": "Puma",
+		"capacity": "40",
+		"weight": "4",
+		"image": "12.jpg",
+		"price": 175.5
+	},
+	{
+		"name": "Garment Bag",
+		"brand": "Nike",
+		"capacity": "45",
+		"weight": "5",
+		"image": "13.jpg",
+		"price": 35
+	},
+	{
+		"name": "Trolley Bag",
+		"brand": "Nike",
+		"capacity": "50",
+		"weight": "6",
+		"image": "14.jpg",
+		"price": 150
+	},
+	{
+		"name": "Clutch",
+		"brand": "Nike",
+		"capacity": "45",
+		"weight": "6",
+		"image": "15.jpg",
+		"price": 67
+	},
+	{
+		"name": "Tote Bag",
+		"brand": "Adidas",
+		"capacity": "40",
+		"weight": "6",
+		"image": "16.jpg",
+		"price": 255.75
+	},
+	{
+		"name": "Messenger Bag",
+		"brand": "Puma",
+		"capacity": "45",
+		"weight": "4",
+		"image": "17.jpg",
+		"price": 300
+	},
+	{
+		"name": "Belt Bag",
+		"brand": "Puma",
+		"capacity": "50",
+		"weight": "6",
+		"image": "18.jpg",
+		"price": 289.99
+	},
+	{
+		"name": "Backpack",
+		"brand": "Adidas",
+		"capacity": "45",
+		"weight": "4",
+		"image": "19.jpg",
+		"price": 56.75
+	},
+	{
+		"name": "Heavy Backpack",
+		"brand": "Nike",
+		"capacity": "40",
+		"weight": "5",
+		"image": "20.jpg",
+		"price": 31
+	}
+]

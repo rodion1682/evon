@@ -1,0 +1,123 @@
+@import "./consts.scss";
+
+.home {
+	padding-top: 15px;
+	padding-bottom: 30px;
+	// .home__container
+	&__container {
+		display: flex;
+		gap: 30px;
+		@media (max-width: $md1) {
+			gap: 0px;
+		}
+	}
+	// .home__aside
+	&__aside {
+		flex: 0 0 270px;
+		@media (max-width: $md1) {
+			flex: 0 0 0px;
+		}
+	}
+	// .home__content
+	&__content {
+		flex: 1 1 auto;
+	}
+	// .home__items
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -10px -15px 0px -15px;
+	}
+	// .home__loader
+	&__loader {
+		justify-content: center;
+		align-items: center;
+		margin: 50px auto auto auto;
+	}
+}
+
+.bag {
+	flex: 0 1 25%;
+	padding: 30px 15px 0px 15px;
+	font-family: "Poppins";
+	font-weight: 700;
+	display: flex;
+	flex-direction: column;
+	@media (max-width: $md0) {
+		flex: 0 1 33.333%;
+	}
+	@media (max-width: $md3) {
+		flex: 0 1 50%;
+	}
+	@media (max-width: $md5) {
+		flex: 1 1 100%;
+		padding: 30px 0px 0px 0px;
+	}
+	// .bag__inner
+	&__inner {
+		flex: 1 1 auto;
+		&:not(:last-child) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+	// .bag__image-ibg_contain
+	&__image-ibg_contain {
+		overflow: hidden;
+		display: block;
+		width: 100%;
+		padding-bottom: 100%;
+		transition: box-shadow 0.3s ease 0s;
+		box-shadow: 0px 0px 3px rgba(0, 0, 0, 0);
+		img {
+			transition: transform 0.3s ease 0s;
+		}
+		&:not(:last-child) {
+			margin: 0px 0px 15px 0px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+				img {
+					transform: scale(1.06);
+				}
+			}
+		}
+	}
+	// .bag__box
+	&__box {
+		@media (max-width: $md5) {
+			padding: 0px 15px;
+		}
+	}
+	// .bag__title
+	&__title {
+		font-size: 22px;
+		line-height: 25px;
+		display: block;
+		width: fit-content;
+		color: $dark;
+		transition: color 0.3s ease 0s;
+		font-weight: 700;
+		&:not(:last-child) {
+			margin: 0px 0px 15px 0px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+	// .bag__price
+	&__price {
+		font-size: 16px;
+		letter-spacing: 0.5px;
+		color: $red;
+		&::before {
+			content: "$";
+			margin-right: 1px;
+		}
+	}
+	// .bag__button
+	&__button {
+	}
+}

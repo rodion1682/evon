@@ -1,0 +1,184 @@
+@import "./consts.scss";
+
+.bag-page {
+	padding: 30px 0px;
+	font-family: "Poppins";
+	color: $darkBlue;
+	@media (max-width: $md3) {
+		padding: 15px 0px 30px 0px;
+	}
+	// .bag-page__container
+	&__container {
+		@media (min-width: $md3) {
+			display: flex;
+		}
+	}
+	// .bag-page__image-ibg_contain
+	&__image-ibg_contain {
+		padding-bottom: 50%;
+		@media (min-width: $md3) {
+			flex: 0 0 50%;
+		}
+		@media (max-width: $md3) {
+			padding-bottom: 60%;
+		}
+		@media (max-width: $md4) {
+			padding-bottom: 80%;
+		}
+		@media (max-width: $md5) {
+			padding-bottom: 100%;
+		}
+	}
+	// .bag-page__items
+	&__items {
+		@media (min-width: $md3) {
+			padding-left: 30px;
+			flex: 0 0 50%;
+		}
+		@media (max-width: $md3) {
+			display: flex;
+		}
+		@media (max-width: $md5) {
+			flex-wrap: wrap;
+		}
+	}
+	// .bag-page__top
+	&__top {
+		@media (min-width: $md3) {
+			padding-bottom: 30px;
+			border-bottom: 1px solid $darkBlue;
+			&:not(:last-child) {
+				margin: 0px 0px 30px 0px;
+			}
+		}
+		@media (max-width: $md3) {
+			flex: 0 1 50%;
+			padding-right: 15px;
+			border-right: 1px solid $darkBlue;
+		}
+		@media (max-width: $md5) {
+			flex: 1 1 100%;
+			padding: 0px 0px 20px 0px;
+			border: none;
+			margin: 0px -15px;
+		}
+	}
+	// .bag-page__bottom
+	&__bottom {
+		@media (max-width: $md3) {
+			flex: 0 1 50%;
+			padding-left: 15px;
+		}
+		@media (max-width: $md5) {
+			flex: 1 1 100%;
+			padding-left: 0;
+		}
+	}
+	// .bag-page__navigation
+	&__navigation {
+		display: flex;
+		&:not(:last-child) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+	// .bag-page__box
+	&__box {
+		&:not(:last-child) {
+			margin: 0px 0px 25px 0px;
+		}
+		@media (max-width: $md3) {
+			&:not(:last-child) {
+				margin: 0px 0px 15px 0px;
+			}
+		}
+		@media (max-width: $md4) {
+			&:not(:last-child) {
+				margin: 0px 0px 10px 0px;
+			}
+		}
+		@media (max-width: $md5) {
+			padding: 0px 15px;
+		}
+	}
+	// .bag-page__link
+	&__link {
+		opacity: 0.7;
+		transition: all 0.3s ease 0s;
+		&::after {
+			padding: 0px 5px 0px 3px;
+			content: "/";
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 1;
+				color: $red;
+			}
+		}
+		@media (any-hover: none) {
+			opacity: 1;
+			color: $red;
+		}
+	}
+	// .bag-page__span
+	&__span {
+		padding-left: 5px;
+		font-weight: 700;
+		color: $darkBlue;
+	}
+	// .bag-page__title
+	&__title {
+		font-size: 35px;
+		line-height: 40px;
+		font-weight: 700;
+	}
+	// .bag-page__wrapper
+	&__wrapper {
+		@media (min-width: $md4) {
+			display: flex;
+			align-items: center;
+			gap: 30px;
+		}
+	}
+	// .bag-page__price
+	&__price {
+		font-size: 25px;
+		line-height: 28px;
+		font-weight: 700;
+		color: $red;
+		&::before {
+			content: "$";
+			margin-right: 3px;
+		}
+		@media (max-width: $md4) {
+			&:not(:last-child) {
+				margin: 0px 0px 15px 0px;
+			}
+		}
+		@media (max-width: $md5) {
+			padding: 0px 15px;
+		}
+	}
+	// .bag-page__button
+	&__button {
+		@media (min-width: $md4) {
+			max-width: 225px;
+		}
+	}
+	// .bag-page__item
+	&__item {
+		font-size: 20px;
+		line-height: 23px;
+		display: flex;
+		gap: 10px;
+		&:not(:last-child) {
+			margin: 0px 0px 10px 0px;
+		}
+	}
+	// .bag-page__name
+	&__name {
+	}
+	// .bag-page__value
+	&__value {
+		font-weight: 700;
+	}
+}

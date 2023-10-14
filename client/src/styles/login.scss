@@ -1,0 +1,68 @@
+@import "./consts.scss";
+
+.login {
+	// .login__container
+	&__container {
+	}
+	// .login__form
+	&__form {
+		font-family: "Poppins";
+		max-width: 420px;
+		margin: 30px auto 0 auto;
+	}
+	// .login__title
+	&__title {
+		font-size: 30px;
+		line-height: 40px;
+		font-weight: 700;
+		&:not(:last-child) {
+			margin: 0px 0px 15px 0px;
+		}
+	}
+	// .login__body
+	&__body {
+		display: flex;
+		gap: 30px;
+		justify-content: space-between;
+		&:not(:last-child) {
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: $md5) {
+			flex-direction: column;
+			gap: 10px;
+		}
+	}
+	// .login__bottom
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		&:not(:last-child) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	// .login__text
+	&__text {
+	}
+	// .login__switch
+	&__switch {
+		font-weight: 700;
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+	// .login__button
+	&__button {
+	}
+	//. login__error
+	&__error {
+		text-align: center;
+		margin-top: 15px;
+		color: $red;
+		font-size: 20px;
+		font-weight: 700;
+	}
+}

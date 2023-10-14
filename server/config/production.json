@@ -1,0 +1,6 @@
+{
+	"port": 3000,
+	"mongoUri": "mongodb+srv://rodion:rodion1234@cluster0.cakodtl.mongodb.net/evon?retryWrites=true&w=majority",
+	"accessSecret": "super secret from backend",
+	"refreshSecret": "super refresh key"
+}
